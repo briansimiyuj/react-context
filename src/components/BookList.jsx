@@ -1,10 +1,10 @@
-const BookList = () =>{
+const BookList = ({ bgColor }) =>{
 
     return(
 
         <div className="book-list">
 
-            <ul>
+            <ul style={{ backgroundColor: bgColor }}>
 
                 <li>the way of kings</li>
 

@@ -1,15 +1,19 @@
+import { useState } from "react"
 import BookList from "./components/BookList"
 import Navbar from "./components/Navbar"
 
 function Script(){
+
+  const [bgColor, setBgColor] = useState("red"),
+        [textColor, setTextColor] = useState("blue")
   
   return(
     
     <main>
 
-      <Navbar/>
+      <Navbar textColor={textColor} bgColor={bgColor}/>
 
-      <BookList/>
+      <BookList bgColor={bgColor}/>
 
     </main>
 
