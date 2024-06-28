@@ -1,8 +1,17 @@
+import BookList from "./components/BookList"
+import Navbar from "./components/Navbar"
+
 function Script(){
   
   return(
     
-    <h1>Hello World</h1>
+    <main>
+
+      <Navbar/>
+
+      <BookList/>
+
+    </main>
 
   )
 
