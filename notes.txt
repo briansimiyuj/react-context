@@ -1,3 +1,5 @@
-Let's say we want to share bgColor and textColor from Script component to Navbar and BookList components. In the past, we had to pass bgColor and textColor as props to Navbar and BookList (Script.jsx). Then we receive them as props in Navbar and BookList. This method is called Prop Drilling.
+Sometimes, we have many components in the app tree. Therefore, we have to pass props to every child component until it reaches the destinated component. This is messy since some components may not need the data, they just carry it. This where Context API comes in.
+
+Context API is suitable for global state
 
 video 2
