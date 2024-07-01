@@ -1,3 +1,5 @@
 To access the state that we created in ThemeContext.jsx, we need to import it to the component that we want to access it (In this case Navbar). Then we use useContext to access it.
 
-video #3
+We can also access the state using the context consumer as shown in Navbar.jsx
+
+video #4
