@@ -1,4 +1,11 @@
+import { useContext } from "react"
+import { ThemeContext } from "../context/ThemeContext"
+
 const Navbar = () =>{
+
+    const { isLightTheme, light, dark } = useContext(ThemeContext)
+
+    console.log(isLightTheme, light, dark)
 
     return(
 

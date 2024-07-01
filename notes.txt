@@ -1,7 +1,1 @@
-Let's create a Theme Context, (context/ThemeContext.jsx). Then we import createContext from React and we assign ThemeContext to it. 
-
-Then we create a component named ThemeContextProvider. Inside it we need to provide state that will be shared in different components(ThemeContext.jsx ln 7).
-
-Then we return the ThemeContext.Provider as jsx with value as theme and setTheme. 
-
-Then we wrap our components in Script.js with ThemeContextProvider. This makes Navbar and BookList children of ThemeContextProvider. Therefore we can access the children in ThemeContext as props, and output it inside ThemeContext.Provider (ThemeContext.jsx ln 19).
+To access the state that we created in ThemeContext.jsx, we need to import it to the component that we want to access it (In this case Navbar). Then we use useContext to access it.
