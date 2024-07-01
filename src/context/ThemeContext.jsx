@@ -11,10 +11,16 @@ const ThemeContextProvider = ({ children }) =>{
         dark: { syntax: '#ddd', ui: '#333', bg: '#555' }
 
     })
+
+    const toggleTheme = () =>{
+    
+       setTheme({ ...theme, isLightTheme: !theme.isLightTheme })
+    
+    }
      
     return(
 
-        <ThemeContext.Provider value={{ ...theme, setTheme }}>
+        <ThemeContext.Provider value={{ ...theme, setTheme, toggleTheme }}>
 
             { children }
 

@@ -1,5 +1,6 @@
 import BookList from "./components/BookList"
 import Navbar from "./components/Navbar"
+import ThemeToggle from "./components/ThemeToggle"
 import ThemeContextProvider from "./context/ThemeContext"
 
 function Script(){
@@ -13,6 +14,8 @@ function Script(){
         <Navbar/>
 
         <BookList/>
+
+        <ThemeToggle/>
 
       </ThemeContextProvider>
 
