@@ -1,19 +1,20 @@
-import { useState } from "react"
 import BookList from "./components/BookList"
 import Navbar from "./components/Navbar"
+import ThemeContextProvider from "./context/ThemeContext"
 
 function Script(){
-
-  const [bgColor, setBgColor] = useState("red"),
-        [textColor, setTextColor] = useState("blue")
   
   return(
     
     <main>
 
-      <Navbar textColor={textColor} bgColor={bgColor}/>
+      <ThemeContextProvider>
 
-      <BookList bgColor={bgColor}/>
+        <Navbar/>
+
+        <BookList/>
+
+      </ThemeContextProvider>
 
     </main>
 

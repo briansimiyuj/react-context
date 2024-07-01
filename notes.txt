@@ -1,5 +1,7 @@
-Sometimes, we have many components in the app tree. Therefore, we have to pass props to every child component until it reaches the destinated component. This is messy since some components may not need the data, they just carry it. This where Context API comes in.
+Let's create a Theme Context, (context/ThemeContext.jsx). Then we import createContext from React and we assign ThemeContext to it. 
 
-Context API is suitable for global state
+Then we create a component named ThemeContextProvider. Inside it we need to provide state that will be shared in different components(ThemeContext.jsx ln 7).
 
-video 2
+Then we return the ThemeContext.Provider as jsx with value as theme and setTheme. 
+
+Then we wrap our components in Script.js with ThemeContextProvider. This makes Navbar and BookList children of ThemeContextProvider. Therefore we can access the children in ThemeContext as props, and output it inside ThemeContext.Provider (ThemeContext.jsx ln 19).

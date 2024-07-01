@@ -1,10 +1,10 @@
-const Navbar = ({ textColor }) =>{
+const Navbar = () =>{
 
     return(
 
         <nav>
 
-            <h1 style={{ color: textColor }}>Context App</h1>
+            <h1>Context App</h1>
             
             
             <ul>
