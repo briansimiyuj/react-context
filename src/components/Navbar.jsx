@@ -3,13 +3,12 @@ import { ThemeContext } from "../context/ThemeContext"
 
 const Navbar = () =>{
 
-    const { isLightTheme, light, dark } = useContext(ThemeContext)
-
-    console.log(isLightTheme, light, dark)
+    const { isLightTheme, light, dark } = useContext(ThemeContext),
+           theme = isLightTheme ? light : dark
 
     return(
 
-        <nav>
+        <nav style={{ backgroundColor: theme.ui, color: theme.syntax }}>
 
             <h1>Context App</h1>
             
