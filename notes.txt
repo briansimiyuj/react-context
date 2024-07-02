@@ -1,3 +1,1 @@
-To update the state, we need to create a function in ThemeContext (toggleTheme), that updates the state. Then pass it to the context provider, and access the function in the component that needs it(ThemeToggle).
-
-video #6
+video #7
