@@ -1,1 +1,3 @@
-video #7
+To consume multiple contexts, we don't need to use another context consumer. We need to destructure the state from the new context(AuthContext), then use the destructured state in our component(Navbar ln 8 & 26).
+
+video #8
