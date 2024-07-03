@@ -10,42 +10,26 @@ const Navbar = () =>{
 
     return(
 
-        <ThemeContext.Consumer>
+        <nav style={{ backgroundColor: theme.ui, color: theme.syntax }}>
 
-            {
-
-                context =>{
-
-                    return(
-
-                        <nav style={{ backgroundColor: theme.ui, color: theme.syntax }}>
-
-                            <h1>Context App</h1>
+            <h1>Context App</h1>
 
 
-                            <div>
+            <div>
 
-                                <button onClick={toggleAuth}>{isAuth ? "Sign Out" : "Sign In"}</button>
+                <button onClick={toggleAuth}>{isAuth ? "Sign Out" : "Sign In"}</button>
 
-                            </div>
+            </div>
 
-                            <ul>
+            <ul>
 
-                                <li>Home</li>
-                                <li>About</li> 
-                                <li>Contact</li>
+                <li>Home</li>
+                <li>About</li> 
+                <li>Contact</li>
 
-                            </ul>
+            </ul>
 
-                        </nav>
-
-                    )
-
-                }
-
-            }
-
-        </ThemeContext.Consumer>
+        </nav>
 
     )
 
