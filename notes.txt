@@ -1,1 +1,3 @@
-video #15
+A reducer function is a way that consolidates multiple functions into a single function. For example, in reading-list project, we have addBook and removeBook. We want to consolidate these two functions into one.
+
+video #19 and #20
